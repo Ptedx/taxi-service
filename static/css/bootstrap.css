@@ -495,7 +495,23 @@ mark,
   content: "\2014 \00A0";
 }
 
+.photo-1{
+  background: url('/Novo_site/static/img/foto.png') no-repeat;
+}
+.photo-2{
+  background: url('/Novo_site/static/img/foto2.png') no-repeat;
+}
+.photo-3{
+  background: url('/Novo_site/static/img/foto3.png') no-repeat;
+}
+.photo-4{
+  background: url('/Novo_site/static/img/foto4.png') no-repeat;
+}
 
+.photo{
+  min-height: 330px;
+  background-position: center;
+}
 
 .img-1{
   background: url('/Novo_site/static/img/cell-mobile.png') no-repeat;
@@ -2580,6 +2596,11 @@ fieldset:disabled a.btn {
   position: relative;
 }
 
+.btn-form a{
+  color: #333;
+  text-decoration: none;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #007bff;
@@ -4518,6 +4539,10 @@ tbody.collapse.show {
 
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
+}
+
+.infocard{
+  min-height: 330px;
 }
 
 .card {
