@@ -42,7 +42,6 @@
   margin: 0;
   padding: 0;
 }
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -295,6 +294,8 @@ input[type="radio"],
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
+  width: auto;
+  margin-right: 5px;
 }
 
 input[type="date"],
@@ -302,6 +303,12 @@ input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   -webkit-appearance: listbox;
+}
+
+input[type='submit']{
+  font-weight: 700;
+  width: 100%;
+  padding: 0;
 }
 
 textarea {
@@ -486,6 +493,28 @@ mark,
 
 .blockquote-footer::before {
   content: "\2014 \00A0";
+}
+
+
+
+.img-1{
+  background: url('/Novo_site/static/img/cell-mobile.png') no-repeat;
+
+}
+.img-2{
+  background: url('/Novo_site/static/img/gps.png') no-repeat;
+  background-size: 80px !important;
+}
+.img-3{
+  background: url('/Novo_site/static/img/email.png') no-repeat;
+}
+.img-4{
+  background: url('/Novo_site/static/img/credit-cards.png') no-repeat;
+}
+.img{
+  background-size: 100px;
+  background-position: center;
+  height: 128px;
 }
 
 .img-fluid {
@@ -2034,6 +2063,19 @@ select.form-control:focus::-ms-value {
   background-color: #fff;
 }
 
+.checkbox{
+  display: inline-block;
+  font-size: 11px;
+  padding-top: 5px;
+}
+
+.checkbox > label{
+  width: 100%;
+}
+.checkbox a{
+  color: #495057;
+  text-decoration: underline;
+}
 .form-control-file,
 .form-control-range {
   display: block;
@@ -2523,6 +2565,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
+}
+
+.btn-form{
+  height: 70px;
+  width: 100%;
+  background-color: #ffe46e;
+  color:#333;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  line-height: 72px;
+  font-weight: 700;
+  position: relative;
 }
 
 .btn-primary {
@@ -6568,7 +6623,9 @@ button.bg-dark:focus {
 .embed-responsive-1by1::before {
   padding-top: 100%;
 }
-
+p{
+  margin: 0;
+}
 .flex-row {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;

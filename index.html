@@ -38,20 +38,48 @@
             <form action="" method="POST" class="form-control">
                 <div class="form-group">
                     <label for="email"><img src="./static/img/city.svg" width="25px"></label>
-                    <input type="email" required placeholder="email@example.com">
+                    <input type="email" name="email" required placeholder="email@example.com">
                 </div>
                 <div class="form-group">
                     <label for="password"><img src="./static/img/city.svg" width="25px"></label>
-                    <input type="password" required placeholder="your password">
+                    <input type="password" name="password" required placeholder="your password">
                 </div>
                 <div class="form-group">
                     <label for="password"><img src="./static/img/city.svg" width="25px"></label>
-                    <input type="password" required placeholder="your password">
+                    <input type="password" name="password" required placeholder="your password">
+                </div>
+                <div class="btn-form">
+                    <input type="submit" value="Enviar">
+                </div>
+                <div class="checkbox d-flex align-items-center justify-content-center">
+                    <label><input type="checkbox" name="checkbox" checked>
+                        Ao enviar as informações eu aceito os <a href="#">termos
+                            de uso do The Luxury</a></label>
                 </div>
             </form>
         </div>
     </section>
-
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-3 text-center">
+                <div class="img img-1"></div>
+                <p>Baixe o aplicativo Luxury+</p>
+                <img src="./static/img/mac.svg" alt="mac & ios" width="60px">
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+                <div class="img img-2"></div>
+                <p>Cobertura no Brazil inteiro</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+                <div class="img img-3"></div>
+                <p>Serviço disponível a qualquer momento</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+                <div class="img img-4"></div>
+                <p>Pague tranquilamente utilizando seu cartãp no App</p>
+            </div>
+        </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./src/js/bootstrap.bundle.min.js"></script>
