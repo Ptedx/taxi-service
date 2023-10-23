@@ -19,9 +19,8 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#features">Features</a>
             <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
           </div>
         </div>
       </nav>
@@ -46,7 +45,7 @@
                 </div>
                 <div class="form-group">
                     <label for="password"><img src="./static/img/city.svg" width="25px"></label>
-                    <input type="password" name="password" required placeholder="your password">
+                    <input type="password" name="password" required placeholder="cell number">
                 </div>
                 <div class="btn-form">
                     <input type="submit" value="Enviar">
@@ -80,7 +79,7 @@
             </div>
         </div>
     </section>
-    <section class="container d-flex-center flex-column">
+    <section class="container d-flex-center flex-column"  id="features">
         <div class="infocard d-flex-center w-100">
             <div class="w-50 text-center photo-1 photo"></div>
             <div class="w-50 text-center">
@@ -148,8 +147,31 @@
         </div>
 
     </section>
+    <section class="container ratings text-center">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p class="d-block w-100">Opa bom dia</p>
+              </div>
+              <div class="carousel-item">
+                <p class="d-block w-100">Opa bom</p>
+              </div>
+              <div class="carousel-item">
+                <p class="d-block w-100">Opa dia</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./src/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/bootstrap.bundle.js"></script>
   </body>
 </html>
