@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.css">
 
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <title>The Luxury</title>
   </head>
   <body>
@@ -148,27 +151,49 @@
 
     </section>
     <section class="container ratings text-center" id="depoiments">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <p class="d-block w-100">Opa bom dia</p>
-              </div>
-              <div class="carousel-item">
-                <p class="d-block w-100">Opa bom</p>
-              </div>
-              <div class="carousel-item">
-                <p class="d-block w-100">Opa dia</p>
-              </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cards">
+                        <div class="cards-img img-1"></div>
+                        <div class="card-content">
+                            <h1>Miranha</h1>
+                            <p>O cara mais belo dos 7 mares</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cards">
+                        <div class="cards-img img-2"></div>
+                        <div class="card-content">
+                            <h1>Miranha</h1>
+                            <p>O cara mais belo dos 7 mares</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cards">
+                        <div class="cards-img img-3"></div>
+                        <div class="card-content">
+                            <h1>Miranha</h1>
+                            <p>O cara mais belo dos 7 mares</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cards">
+                        <div class="cards-img img-4"></div>
+                        <div class="card-content">
+                            <h1>Miranha</h1>
+                            <p>O cara mais belo dos 7 mares</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
     <footer class="container d-flex justify-content-between">
         <div>
@@ -198,5 +223,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./src/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/js/swiper.js"></script>
   </body>
 </html>
