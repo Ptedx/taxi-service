@@ -4873,22 +4873,9 @@ tbody.collapse.show {
   color: #6c757d;
 }
 
-.cards-img{
-  background-size: 100px;
-  background-position: center;
+.cards-img img{
+  border-radius: 10px;
   height: 128px;
-}
-.c-img1{
-  background: url('/Novo_site/static/img/foto.png'), no-repeat;
-}
-.c-img2{
-  background: url('/Novo_site/static/img/foto.png'), no-repeat;
-}
-.c-img3{
-  background: url('/Novo_site/static/img/foto.png'), no-repeat;
-}
-.c-img4{
-  background: url('/Novo_site/static/img/foto.png'), no-repeat;
 }
 .links a{
   text-decoration: none;
