@@ -49,6 +49,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 @-ms-viewport {
@@ -59,8 +60,8 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
   display: block;
 }
 
-footer > div{
-  padding: 0 25px 0 25px;
+footer .row{
+  width: 100%;
 }
 
 body {
@@ -4096,7 +4097,9 @@ tbody.collapse.show {
 
 .footer-subitem{
   margin-left:10px;
+  font-size: 12px;
 }
+
 
 .navbar {
   position: relative;
@@ -4159,6 +4162,7 @@ tbody.collapse.show {
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  text-align: center;
 }
 
 .navbar-nav .dropdown-menu {
@@ -4189,12 +4193,12 @@ tbody.collapse.show {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border: none;
 }
 
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;
+  outline: none;
 }
 
 .navbar-toggler:not(:disabled):not(.disabled) {
@@ -4219,8 +4223,30 @@ tbody.collapse.show {
   }
 }
 
+.back-top{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 15px;
+  right: 15px;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+.fadeIn{
+  animation: fadeIn 3s forwards;
+}
+
 .main-screen{
-  height: calc(100vh - 96px);
   display: flex;
 }
 
@@ -4229,11 +4255,25 @@ tbody.collapse.show {
   text-align: center;
 }
 @media (max-width:767.98px){
+  body{
+    padding: 0px 10px;
+  }
+
+  
   .main-screen{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .main-item {
+    width: 100%;
+  }
+  .main-item h1{
+    font-size: 32px !important;
   }
 }
+
 @media (min-width: 576px) {
   .navbar-expand-sm {
     -webkit-box-orient: horizontal;
@@ -4282,11 +4322,50 @@ tbody.collapse.show {
   }
 }
 
+@media (max-width:768px) {
+  div h1{
+    font-size: 22px;
+  }
+
+  .country{
+    text-align: left;
+  }
+  .footer-subitem{
+    font-size: 11px;
+  }
+
+  footer p{
+    text-align: center;
+  }
+
+  .infocard p{
+    padding: 0 5px;
+  }
+  .statistics{
+    font-size: 22px;
+  }
+  .statistics h1{
+    font-size: 52px !important;
+  }
+  .ratings{
+    padding-top: 50px;
+  }
+  .form-control{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+  .navbar{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -4923,10 +5002,22 @@ tbody.collapse.show {
   border-radius: 10px;
   height: 128px;
 }
+
+.links {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
 .links a{
   text-decoration: none;
   color: #333;
   cursor: pointer;
+  font-weight: 700;
+}
+
+.country {
+  line-height: 48px;
+  text-align: end;
 }
 
 .pagination {
@@ -7543,6 +7634,7 @@ p{
   left: 0;
   z-index: 1030;
 }
+
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {

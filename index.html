@@ -21,8 +21,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#features">Qualidades</a>
+            <a class="nav-item nav-link" href="#features">Benefícios</a>
             <a class="nav-item nav-link" href="#depoiments">Depoimentos</a>
           </div>
         </div>
@@ -32,23 +31,23 @@
             <h1>Ganhe até R$4000
                 como taxista
                 na The Luxury</h1>
-            <img src="./static/img/bg.png" alt="background car" width="100%">
+            <img  class="observeMe" src="./static/img/bg.png" alt="background car" width="100%">
         </div>
         <div class="main-item">
-            <h1>Contecte-se agora mesmo</h1>
+                <h1>Contecte-se agora mesmo</h1>
             <span>É bem rapidinho</span>
             <form action="" method="POST" class="form-control">
                 <div class="form-group">
-                    <label for="email"><img src="./static/img/city.svg" width="25px"></label>
+                    <label for="email"><img src="./static/img/email-register.png" width="25px"></label>
                     <input type="email" name="email" required placeholder="email@example.com">
                 </div>
                 <div class="form-group">
-                    <label for="password"><img src="./static/img/city.svg" width="25px"></label>
+                    <label for="password"><img src="./static/img/password.png" width="25px"></label>
                     <input type="password" name="password" required placeholder="your password">
                 </div>
                 <div class="form-group">
-                    <label for="password"><img src="./static/img/city.svg" width="25px"></label>
-                    <input type="password" name="password" required placeholder="cell number">
+                    <label for="cellphone"><img src="./static/img/cellphone.png" width="25px"></label>
+                    <input type="cellphone" name="cellphone" required placeholder="cell number">
                 </div>
                 <div class="btn-form">
                     <div class="light"></div>
@@ -107,7 +106,7 @@
                 <h1>Retirada instantânea a qualquer hora do dia</h1>
                 <p>Use a interface conveniente de retirada em nosso site para isso.</p>
                 <div class="btn-form w-50">
-                    <a href="#">Solicitar um pagamento</a>
+                    <a href="#">Solicitar serviço</a>
                 </div>
             </div>
         </div>
@@ -205,35 +204,41 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
+    <div class="back-top">
+        <a href="#">
+            <img src="./static/img/back-top.png" alt="back-top" width="50px" height="50px">
+        </a>
+    </div>
     <footer class="container d-flex justify-content-between">
-        <div>
-            <p>Copyright © 2023 Vinicius Costa. All rights reserved.</p>
-        </div>
-        <div class="d-flex-center links">
-            <div>
-                <a href="#">Privacy Policy</a>
+        <div class="row">
+            <div class="col-sm-6 col-lg-6 col-md-6">
+                <p>Copyright © 2023 Vinicius Costa. All rights reserved.</p>
             </div>
-            <div class="footer-subitem">
-                <a href="#">Terms of Use </a>
+            <div class="d-flex-center links col-sm-6 col-lg-6 col-md-6">
+                <div class="footer-subitem">
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-subitem">
+                    <a href="#">Terms of Use </a>
+                </div>
+                <div class="footer-subitem">
+                    <a href="#">Sales and Refunds</a>
+                </div>
+                <div class="footer-subitem">
+                    <a href="#">Legal</a>
+                </div>
+                <div class="footer-subitem">
+                    <a href="#"> Site Map</a>
+                </div>
             </div>
-            <div class="footer-subitem">
-                <a href="#">Sales and Refunds</a>
-            </div>
-            <div class="footer-subitem">
-                <a href="#">Legal</a>
-            </div>
-            <div class="footer-subitem">
-                <a href="#"> Site Map</a>
-            </div>
-        </div>
-        <div>
-            <p>Brazil</p>
         </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./src/js/bootstrap.bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./src/js/swiper.js"></script>
+    <script src="./src/js/opacity-images.js"></script>
   </body>
 </html>

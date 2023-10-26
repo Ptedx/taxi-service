@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-    const slides = window.innerWidth || document.documentElement.clientWidth
-    console.log(slides)
     const swiper = new Swiper('.swiper', {
         slidesPerView: 1,
         loop: true,
