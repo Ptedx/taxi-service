@@ -665,6 +665,12 @@ pre code {
 
 .ratings {
   padding: 100px 0 80px 0;
+  background-color: #f8f8f8;
+  border-radius: 0 0 5px 5px;
+}
+
+.ratings > h1{
+  margin-bottom: 20px;
 }
 
 .no-gutters {
@@ -2605,18 +2611,42 @@ fieldset:disabled a.btn {
   border-radius: 5px;
 }
 
+#features{
+  margin-top: 5px;
+  background-color: #f8f8f8;
+  border-radius: 5px 5px 0 0;
+}
+
+@keyframes moveLight {
+  0%, 33%{ 
+    left: 0;
+    transform: translate(calc(0% - 65px), -40px) rotate(45deg);
+  }
+  100%, 66%{
+    left: calc(100% + 25px);
+    transform: translate(calc(100% + 55px), -40px) rotate(45deg);
+  }
+}
+.light{
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 155px;
+  width: 25px;
+  animation: moveLight 3s infinite;
+  position: absolute;
+  z-index: 2;
+}
+
 .btn-form{
   margin-top: 25px;
   height: 70px;
-  width: 100%;
   background-color: #ffe46e;
   color:#333;
   text-align: center;
-  align-items: center;
   border-radius: 5px;
   line-height: 70px;
   font-weight: 700;
   position: relative;
+  overflow: hidden;
 }
 
 .btn-form a{
@@ -2628,6 +2658,7 @@ fieldset:disabled a.btn {
   color: #333;
   text-decoration: none;
   cursor: pointer;
+  z-index: 3;
 }
 
 .btn-primary {
@@ -4577,7 +4608,12 @@ tbody.collapse.show {
 
 .infocard{
   min-height: 330px;
+  background-color: #ffffff;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 15px 35px rgba(0,0,0, 0.05);
 }
+
 
 .card {
   position: relative;
@@ -4871,6 +4907,16 @@ tbody.collapse.show {
 
 .breadcrumb-item.active {
   color: #6c757d;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: #333 !important;
+}
+
+@media (max-width:768px) {
+  .swiper-button-next, .swiper-button-prev{
+    color: #33333300 !important;
+  }
 }
 
 .cards-img img{
