@@ -4246,6 +4246,15 @@ tbody.collapse.show {
   animation: fadeIn 3s forwards;
 }
 
+.response-main{
+  height: calc(100vh - 80px);
+}
+
+.response-main *{
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 .main-screen{
   display: flex;
 }
