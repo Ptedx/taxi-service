@@ -1,6 +1,6 @@
-import bodyParser from 'body-parser'
-import express from 'express'
-import pg from 'pg-promise'
+const bodyParser = require('body-parser')
+const express = require('express')
+const pg = require('pg-promise')
 const app = express()
 /*
 1 - Configurar as pastas no express usando o set V
@@ -12,10 +12,10 @@ const app = express()
 3 - Fazer a integração com o banco de dados PostgreSQL
 3.1 - Estabelecer e fechar conexão com o banco no POST
 */
-
+//Connections
 app.set('views', __dirname+'/views')
 app.set('view engine', 'ejs')
-app.use(express.static(__dirname+'/public'))
+app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.json(), bodyParser.urlencoded({extended:true}))
 
 function connection(){
@@ -27,10 +27,12 @@ function connection(){
         port:'5432'
     })
 }
-
+//API
 app.get('/',(req,res)=>{
     res.render('index')
 })
+
+
 
 app.listen(3000,()=>{
     console.log('Ouvindo na porta 3000')

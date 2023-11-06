@@ -1,0 +1,26 @@
+{
+  "name": "the-luxury",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ptedx/taxi-service.git"
+  },
+  "author": "vinicius costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ptedx/taxi-service/issues"
+  },
+  "homepage": "https://github.com/Ptedx/taxi-service#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "pg-promise": "^11.5.4"
+  }
+}
