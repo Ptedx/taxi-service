@@ -48,13 +48,13 @@ app.post('/register',(req, res)=>{
                 const tel_exist = result.some((row)=>row.cellphone === tel)
 
                 if(tel_exist && email_exist){
-                    msg_error.push('Error: Parece que o e-mail e o celular já estão cadastrados :)')
+                    msg_error.push('Ops! Parece que o e-mail e o celular já estão cadastrados :)')
                 }else{
                     if (tel_exist){
-                        msg_error.push('Error: Parece que o celular já está cadastrado :)')
+                        msg_error.push('Ops! Parece que o celular já está cadastrado :)')
                     }
                     if (email_exist){
-                        msg_error.push('Error: Parece que o e-mail já está cadastrado :)')
+                        msg_error.push('Ops! Parece que o e-mail já está cadastrado :)')
                     }
                 }
                 res.render('response', {final_result: `${msg_error}`})

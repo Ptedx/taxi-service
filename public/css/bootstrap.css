@@ -4234,16 +4234,18 @@ tbody.collapse.show {
 }
 
 @keyframes fadeIn{
-  from{
+  0%{
     opacity:0;
+    transform: translateX(-20px);
   }
-  to{
+  100%{
     opacity:1;
+    transform: translateX(0px);
   }
 }
 
 .fadeIn{
-  animation: fadeIn 3s forwards;
+  animation: fadeIn 2s forwards;
 }
 
 .response-main{
