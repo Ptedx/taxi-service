@@ -8,7 +8,7 @@ entries.forEach((entry)=>{
 }
 
 const images = document.querySelectorAll('.observeMe')
-const observer = new IntersectionObserver(animateItems)
+const observer = new IntersectionObserver(animateItems,{threshold:0.5})
 
 images.forEach((img)=>{
     observer.observe(img)
