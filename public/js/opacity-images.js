@@ -1,4 +1,3 @@
-
 function animateItems(entries, observer){
 entries.forEach((entry)=>{
     if (entry.isIntersecting){
@@ -9,9 +8,7 @@ entries.forEach((entry)=>{
 }
 
 const images = document.querySelectorAll('.observeMe')
-
 const observer = new IntersectionObserver(animateItems)
-
 
 images.forEach((img)=>{
     observer.observe(img)
