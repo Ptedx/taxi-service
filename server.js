@@ -27,7 +27,6 @@ app.get('/',(req,res)=>{
 
 app.post('/register',(req, res)=>{
     const {name, email, tel} = req.body
-    console.log(name,email,tel)
     const db = pgp({
         host:'localhost',
         user:'postgres',
