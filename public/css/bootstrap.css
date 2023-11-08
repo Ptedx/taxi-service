@@ -4283,6 +4283,13 @@ tbody.collapse.show {
   .main-item h1{
     font-size: 32px !important;
   }
+  .infocard{
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+  .infocard > div{
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 576px) {
